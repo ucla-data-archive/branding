@@ -1,0 +1,32 @@
+/* Add any CSS necessary for your custom content */
+
+.navbar-default {
+	background-color: blue;
+	background-image: none;
+}
+
+html, body {
+			height: 100%;
+	}
+	#content.container {
+			min-height: calc(100% - 210px);
+			margin-bottom: -142px;
+	}
+	#content.container:after {
+			content: "";
+			display: block;
+	}
+	#footer {
+					color: #fffff; margin-top:0px; padding-bottom:0px; bottom:-180px; position: relative;
+	}
+
+	/* Place custom footer just above default footer at the bottom of the page... */
+	#custom-footer, #content.container:after {
+			height: 160px;
+	}
+	#custom-footer {
+			background:#fffff; color: #a9a9a9; min-height: 100px; padding: 1.25em 0 100px 0;
+	}
+	#custom-footer a {
+			color: #337ab7;
+	}
